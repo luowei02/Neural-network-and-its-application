@@ -1,0 +1,190 @@
+PyTorch Version: 2.5.0
+Torchvision Version: 0.20.0
+CUDA Available: True
+Using device: cuda
+Files already downloaded and verified
+Files already downloaded and verified
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (linear): Linear(in_features=512, out_features=10, bias=True)
+)
+
+--- Training Started ---
+Epoch [1/50], Current Learning Rate: 0.010000
+Epoch 1 finished. Avg Training Loss: 1.4294, Training Accuracy: 47.65%
+Epoch [2/50], Current Learning Rate: 0.009990
+Epoch 2 finished. Avg Training Loss: 1.0073, Training Accuracy: 63.87%
+Epoch [3/50], Current Learning Rate: 0.009961
+Epoch 3 finished. Avg Training Loss: 0.8232, Training Accuracy: 70.97%
+Epoch [4/50], Current Learning Rate: 0.009911
+Epoch 4 finished. Avg Training Loss: 0.6999, Training Accuracy: 75.42%
+Epoch [5/50], Current Learning Rate: 0.009843
+Epoch 5 finished. Avg Training Loss: 0.6155, Training Accuracy: 78.65%
+Epoch [6/50], Current Learning Rate: 0.009755
+Epoch 6 finished. Avg Training Loss: 0.5539, Training Accuracy: 80.62%
+Epoch [7/50], Current Learning Rate: 0.009649
+Epoch 7 finished. Avg Training Loss: 0.5040, Training Accuracy: 82.63%
+Epoch [8/50], Current Learning Rate: 0.009524
+Epoch 8 finished. Avg Training Loss: 0.4670, Training Accuracy: 83.75%
+Epoch [9/50], Current Learning Rate: 0.009382
+Epoch 9 finished. Avg Training Loss: 0.4326, Training Accuracy: 85.13%
+Epoch [10/50], Current Learning Rate: 0.009222
+Epoch 10 finished. Avg Training Loss: 0.3994, Training Accuracy: 86.00%
+Epoch [11/50], Current Learning Rate: 0.009045
+Epoch 11 finished. Avg Training Loss: 0.3813, Training Accuracy: 86.70%
+Epoch [12/50], Current Learning Rate: 0.008853
+Epoch 12 finished. Avg Training Loss: 0.3581, Training Accuracy: 87.57%
+Epoch [13/50], Current Learning Rate: 0.008645
+Epoch 13 finished. Avg Training Loss: 0.3343, Training Accuracy: 88.38%
+Epoch [14/50], Current Learning Rate: 0.008423
+Epoch 14 finished. Avg Training Loss: 0.3150, Training Accuracy: 89.14%
+Epoch [15/50], Current Learning Rate: 0.008187
+Epoch 15 finished. Avg Training Loss: 0.2995, Training Accuracy: 89.53%
+Epoch [16/50], Current Learning Rate: 0.007939
+Epoch 16 finished. Avg Training Loss: 0.2811, Training Accuracy: 90.26%
+Epoch [17/50], Current Learning Rate: 0.007679
+Epoch 17 finished. Avg Training Loss: 0.2657, Training Accuracy: 90.91%
+Epoch [18/50], Current Learning Rate: 0.007409
+Epoch 18 finished. Avg Training Loss: 0.2539, Training Accuracy: 91.23%
+Epoch [19/50], Current Learning Rate: 0.007129
+Epoch 19 finished. Avg Training Loss: 0.2357, Training Accuracy: 91.86%
+Epoch [20/50], Current Learning Rate: 0.006841
+Epoch 20 finished. Avg Training Loss: 0.2218, Training Accuracy: 92.28%
+Epoch [21/50], Current Learning Rate: 0.006545
+Epoch 21 finished. Avg Training Loss: 0.2130, Training Accuracy: 92.58%
+Epoch [22/50], Current Learning Rate: 0.006243
+Epoch 22 finished. Avg Training Loss: 0.1989, Training Accuracy: 93.09%
+Epoch [23/50], Current Learning Rate: 0.005937
+Epoch 23 finished. Avg Training Loss: 0.1870, Training Accuracy: 93.59%
+Epoch [24/50], Current Learning Rate: 0.005627
+Epoch 24 finished. Avg Training Loss: 0.1749, Training Accuracy: 94.02%
+Epoch [25/50], Current Learning Rate: 0.005314
+Epoch 25 finished. Avg Training Loss: 0.1621, Training Accuracy: 94.38%
+Epoch [26/50], Current Learning Rate: 0.005000
+Epoch 26 finished. Avg Training Loss: 0.1552, Training Accuracy: 94.56%
+Epoch [27/50], Current Learning Rate: 0.004686
+Epoch 27 finished. Avg Training Loss: 0.1410, Training Accuracy: 95.13%
+Epoch [28/50], Current Learning Rate: 0.004373
+Epoch 28 finished. Avg Training Loss: 0.1344, Training Accuracy: 95.41%
+Epoch [29/50], Current Learning Rate: 0.004063
+Epoch 29 finished. Avg Training Loss: 0.1195, Training Accuracy: 96.07%
+Epoch [30/50], Current Learning Rate: 0.003757
+Epoch 30 finished. Avg Training Loss: 0.1109, Training Accuracy: 96.34%
+Epoch [31/50], Current Learning Rate: 0.003455
+Epoch 31 finished. Avg Training Loss: 0.1022, Training Accuracy: 96.54%
+Epoch [32/50], Current Learning Rate: 0.003159
+Epoch 32 finished. Avg Training Loss: 0.0936, Training Accuracy: 96.85%
+Epoch [33/50], Current Learning Rate: 0.002871
+Epoch 33 finished. Avg Training Loss: 0.0839, Training Accuracy: 97.28%
+Epoch [34/50], Current Learning Rate: 0.002591
+Epoch 34 finished. Avg Training Loss: 0.0749, Training Accuracy: 97.64%
+Epoch [35/50], Current Learning Rate: 0.002321
+Epoch 35 finished. Avg Training Loss: 0.0707, Training Accuracy: 97.69%
+Epoch [36/50], Current Learning Rate: 0.002061
+Epoch 36 finished. Avg Training Loss: 0.0632, Training Accuracy: 97.98%
+Epoch [37/50], Current Learning Rate: 0.001813
+Epoch 37 finished. Avg Training Loss: 0.0583, Training Accuracy: 98.25%
+Epoch [38/50], Current Learning Rate: 0.001577
+Epoch 38 finished. Avg Training Loss: 0.0503, Training Accuracy: 98.57%
+Epoch [39/50], Current Learning Rate: 0.001355
+Epoch 39 finished. Avg Training Loss: 0.0469, Training Accuracy: 98.69%
+Epoch [40/50], Current Learning Rate: 0.001147
+Epoch 40 finished. Avg Training Loss: 0.0423, Training Accuracy: 98.88%
+Epoch [41/50], Current Learning Rate: 0.000955
+Epoch 41 finished. Avg Training Loss: 0.0393, Training Accuracy: 99.00%
+Epoch [42/50], Current Learning Rate: 0.000778
+Epoch 42 finished. Avg Training Loss: 0.0377, Training Accuracy: 99.05%
+Epoch [43/50], Current Learning Rate: 0.000618
+Epoch 43 finished. Avg Training Loss: 0.0335, Training Accuracy: 99.23%
+Epoch [44/50], Current Learning Rate: 0.000476
+Epoch 44 finished. Avg Training Loss: 0.0325, Training Accuracy: 99.24%
+Epoch [45/50], Current Learning Rate: 0.000351
+Epoch 45 finished. Avg Training Loss: 0.0313, Training Accuracy: 99.31%
+Epoch [46/50], Current Learning Rate: 0.000245
+Epoch 46 finished. Avg Training Loss: 0.0298, Training Accuracy: 99.37%
+Epoch [47/50], Current Learning Rate: 0.000157
+Epoch 47 finished. Avg Training Loss: 0.0288, Training Accuracy: 99.42%
+Epoch [48/50], Current Learning Rate: 0.000089
+Epoch 48 finished. Avg Training Loss: 0.0281, Training Accuracy: 99.43%
+Epoch [49/50], Current Learning Rate: 0.000039
+Epoch 49 finished. Avg Training Loss: 0.0276, Training Accuracy: 99.43%
+Epoch [50/50], Current Learning Rate: 0.000010
+Epoch 50 finished. Avg Training Loss: 0.0277, Training Accuracy: 99.46%
+--- Finished Training ---
+
+--- Testing Started ---
+
+Average Test Loss: 0.3073
+Accuracy on the 10000 test images: 91.89 %
+
+--- Per-class Accuracy ---
+Accuracy of plane : 92.70 %
+Accuracy of car   : 95.80 %
+Accuracy of bird  : 88.60 %
+Accuracy of cat   : 85.00 %
+Accuracy of deer  : 91.70 %
+Accuracy of dog   : 87.40 %
+Accuracy of frog  : 94.20 %
+Accuracy of horse : 93.10 %
+Accuracy of ship  : 95.90 %
+Accuracy of truck : 94.50 %
+
+--- Per-class Precision ---
+Precision of plane : 92.51 %  (TP: 927, Predicted as plane: 1002)
+Precision of car   : 96.28 %  (TP: 958, Predicted as car: 995)
+Precision of bird  : 90.22 %  (TP: 886, Predicted as bird: 982)
+Precision of cat   : 84.08 %  (TP: 850, Predicted as cat: 1011)
+Precision of deer  : 90.79 %  (TP: 917, Predicted as deer: 1010)
+Precision of dog   : 87.84 %  (TP: 874, Predicted as dog: 995)
+Precision of frog  : 93.27 %  (TP: 942, Predicted as frog: 1010)
+Precision of horse : 95.49 %  (TP: 931, Predicted as horse: 975)
+Precision of ship  : 96.09 %  (TP: 959, Predicted as ship: 998)
+Precision of truck : 92.47 %  (TP: 945, Predicted as truck: 1022)
+--- Finished Testing ---
