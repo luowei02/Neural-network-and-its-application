@@ -4,7 +4,7 @@
 
 This is a project for pushing homework of class "neural network and its application"
 ## Homework-1: Reggression
-1. report: [罗威-SA24218095--homework1.pdf]([https://github.com/luowei02/Neural-network-and-its-application/blob/main/HW-1-Regression/HW-1-Regression.pdf](https://github.com/luowei02/Neural-network-and-its-application/blob/main/HW-1-Regression/%E7%BD%97%E5%A8%81-SA24218095-homework1.pdf))
+1. report: [罗威-SA24218095--homework1.pdf](https://github.com/luowei02/Neural-network-and-its-application/blob/main/HW-1-Regression/hw-1-Regression.ipynb)
 2. code: [Regression.ipynb](https://github.com/luowei02/Neural-network-and-its-application/blob/main/HW-1-Regression/hw-1-Regression.ipynb)
 
 ## Homework-2: CNN
